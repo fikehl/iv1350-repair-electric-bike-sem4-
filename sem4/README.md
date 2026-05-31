@@ -53,8 +53,7 @@ src/
     util/         ErrorFileLogger.java
   test/java/se/kth/iv1350/repairbike/   (matching test packages)
 report/
-    seminar4-report.docx   IMRaD report for seminar 4.
-    seminar4-report.pdf    PDF export of the same report.
+    seminar4-report.pdf   IMRaD report for seminar 4.
     sample-run.txt         Captured System.out output of one full run.
 pom.xml                    Maven build (Java 17 + JUnit 5).
 ```
