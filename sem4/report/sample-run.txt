@@ -1,0 +1,252 @@
+$ mvn -q exec:java
+
+########################################################################
+
+RECEPTIONIST: Customer arrives. Searching for customer with phone 0701112233.
+System returned: Customer[name=Anna Andersson, phone=0701112233, email=anna@example.com, Bike[brand=Crescent, model=Elina E8, serialNumber=CR-E8-00417]]
+
+########################################################################
+
+RECEPTIONIST: Customer describes the problem. Registering it.
+System returned a new repair order:
+============================================
+           REPAIR ORDER #1
+============================================
+Date:    2026-05-16 21:00
+State:   NEWLY_CREATED
+--------------------------------------------
+Customer: Anna Andersson
+Phone:    0701112233
+Email:    anna@example.com
+Bike:     Crescent Elina E8 (S/N CR-E8-00417)
+--------------------------------------------
+Customer's problem description:
+  The motor cuts out after about ten minutes of use, and the front brake squeaks loudly when applied.
+--------------------------------------------
+No diagnostic report has been added yet.
+Estimated completion: 2026-05-23 21:00
+============================================
+
+
+########################################################################
+
+TECHNICIAN: Performing diagnostic and proposing repair tasks.
+
+>>> RepairOrderView: repair order #1 updated (state = READY_FOR_APPROVAL)
+============================================
+           REPAIR ORDER #1
+============================================
+Date:    2026-05-16 21:00
+State:   READY_FOR_APPROVAL
+--------------------------------------------
+Customer: Anna Andersson
+Phone:    0701112233
+Email:    anna@example.com
+Bike:     Crescent Elina E8 (S/N CR-E8-00417)
+--------------------------------------------
+Customer's problem description:
+  The motor cuts out after about ten minutes of use, and the front brake squeaks loudly when applied.
+--------------------------------------------
+Diagnostic report:
+  The battery management system has a faulty temperature sensor that triggers an emergency shutdown. The front brake pads are worn down to the wear indicators.
+
+Proposed repair tasks:
+  - Replace battery temperature sensor: 1200 SEK
+  - Replace front brake pads: 450 SEK
+  - Full safety inspection: 350 SEK
+
+Subtotal:    2000 SEK
+Discount:    0 SEK (No discount)
+Total cost:  2000 SEK
+--------------------------------------------
+Estimated completion: 2026-05-23 21:00
+============================================
+
+System returned the updated repair order:
+============================================
+           REPAIR ORDER #1
+============================================
+Date:    2026-05-16 21:00
+State:   READY_FOR_APPROVAL
+--------------------------------------------
+Customer: Anna Andersson
+Phone:    0701112233
+Email:    anna@example.com
+Bike:     Crescent Elina E8 (S/N CR-E8-00417)
+--------------------------------------------
+Customer's problem description:
+  The motor cuts out after about ten minutes of use, and the front brake squeaks loudly when applied.
+--------------------------------------------
+Diagnostic report:
+  The battery management system has a faulty temperature sensor that triggers an emergency shutdown. The front brake pads are worn down to the wear indicators.
+
+Proposed repair tasks:
+  - Replace battery temperature sensor: 1200 SEK
+  - Replace front brake pads: 450 SEK
+  - Full safety inspection: 350 SEK
+
+Subtotal:    2000 SEK
+Discount:    0 SEK (No discount)
+Total cost:  2000 SEK
+--------------------------------------------
+Estimated completion: 2026-05-23 21:00
+============================================
+
+
+########################################################################
+
+RECEPTIONIST: Anna is a returning customer; applying loyalty discount.
+
+>>> RepairOrderView: repair order #1 updated (state = READY_FOR_APPROVAL)
+============================================
+           REPAIR ORDER #1
+============================================
+Date:    2026-05-16 21:00
+State:   READY_FOR_APPROVAL
+--------------------------------------------
+Customer: Anna Andersson
+Phone:    0701112233
+Email:    anna@example.com
+Bike:     Crescent Elina E8 (S/N CR-E8-00417)
+--------------------------------------------
+Customer's problem description:
+  The motor cuts out after about ten minutes of use, and the front brake squeaks loudly when applied.
+--------------------------------------------
+Diagnostic report:
+  The battery management system has a faulty temperature sensor that triggers an emergency shutdown. The front brake pads are worn down to the wear indicators.
+
+Proposed repair tasks:
+  - Replace battery temperature sensor: 1200 SEK
+  - Replace front brake pads: 450 SEK
+  - Full safety inspection: 350 SEK
+
+Subtotal:    2000 SEK
+Discount:    200 SEK (10% loyalty discount for returning customers)
+Total cost:  1800 SEK
+--------------------------------------------
+Estimated completion: 2026-05-23 21:00
+============================================
+
+
+########################################################################
+
+RECEPTIONIST: Customer accepts the proposed repair tasks. Registering acceptance.
+
+>>> RepairOrderView: repair order #1 updated (state = ACCEPTED)
+============================================
+           REPAIR ORDER #1
+============================================
+Date:    2026-05-16 21:00
+State:   ACCEPTED
+--------------------------------------------
+Customer: Anna Andersson
+Phone:    0701112233
+Email:    anna@example.com
+Bike:     Crescent Elina E8 (S/N CR-E8-00417)
+--------------------------------------------
+Customer's problem description:
+  The motor cuts out after about ten minutes of use, and the front brake squeaks loudly when applied.
+--------------------------------------------
+Diagnostic report:
+  The battery management system has a faulty temperature sensor that triggers an emergency shutdown. The front brake pads are worn down to the wear indicators.
+
+Proposed repair tasks:
+  - Replace battery temperature sensor: 1200 SEK
+  - Replace front brake pads: 450 SEK
+  - Full safety inspection: 350 SEK
+
+Subtotal:    2000 SEK
+Discount:    200 SEK (10% loyalty discount for returning customers)
+Total cost:  1800 SEK
+--------------------------------------------
+Estimated completion: 2026-05-23 21:00
+============================================
+
+============================================
+           REPAIR ORDER #1
+============================================
+Date:    2026-05-16 21:00
+State:   ACCEPTED
+--------------------------------------------
+Customer: Anna Andersson
+Phone:    0701112233
+Email:    anna@example.com
+Bike:     Crescent Elina E8 (S/N CR-E8-00417)
+--------------------------------------------
+Customer's problem description:
+  The motor cuts out after about ten minutes of use, and the front brake squeaks loudly when applied.
+--------------------------------------------
+Diagnostic report:
+  The battery management system has a faulty temperature sensor that triggers an emergency shutdown. The front brake pads are worn down to the wear indicators.
+
+Proposed repair tasks:
+  - Replace battery temperature sensor: 1200 SEK
+  - Replace front brake pads: 450 SEK
+  - Full safety inspection: 350 SEK
+
+Subtotal:    2000 SEK
+Discount:    200 SEK (10% loyalty discount for returning customers)
+Total cost:  1800 SEK
+--------------------------------------------
+Estimated completion: 2026-05-23 21:00
+============================================
+
+System returned the accepted repair order:
+============================================
+           REPAIR ORDER #1
+============================================
+Date:    2026-05-16 21:00
+State:   ACCEPTED
+--------------------------------------------
+Customer: Anna Andersson
+Phone:    0701112233
+Email:    anna@example.com
+Bike:     Crescent Elina E8 (S/N CR-E8-00417)
+--------------------------------------------
+Customer's problem description:
+  The motor cuts out after about ten minutes of use, and the front brake squeaks loudly when applied.
+--------------------------------------------
+Diagnostic report:
+  The battery management system has a faulty temperature sensor that triggers an emergency shutdown. The front brake pads are worn down to the wear indicators.
+
+Proposed repair tasks:
+  - Replace battery temperature sensor: 1200 SEK
+  - Replace front brake pads: 450 SEK
+  - Full safety inspection: 350 SEK
+
+Subtotal:    2000 SEK
+Discount:    200 SEK (10% loyalty discount for returning customers)
+Total cost:  1800 SEK
+--------------------------------------------
+Estimated completion: 2026-05-23 21:00
+============================================
+
+
+########################################################################
+
+
+########################################################################
+
+RECEPTIONIST: A walk-in customer gives phone 0999999999. Searching the registry.
+Sorry, no customer was found for phone number 0999999999. Please double-check the number and try again.
+
+########################################################################
+
+
+########################################################################
+
+RECEPTIONIST: Searching for customer with phone 0700000000 (simulates an unreachable database).
+The customer database is temporarily unavailable. Please try again in a few minutes, or contact IT support if the problem persists.
+
+########################################################################
+
+
+--- contents of repair-bike-error-log.txt after the run ---
+2026-05-16 21:00:01  Database failure while searching for phone 0700000000
+se.kth.iv1350.repairbike.integration.DatabaseFailureException: Could not reach the database while looking up identifier 0700000000.
+    at se.kth.iv1350.repairbike.integration.CustomerRegistry.findCustomer(CustomerRegistry.java:48)
+    at se.kth.iv1350.repairbike.controller.Controller.searchCustomer(Controller.java:71)
+    at se.kth.iv1350.repairbike.view.View.trySearchCustomer(View.java:130)
+    at se.kth.iv1350.repairbike.view.View.runDatabaseFailureFlow(View.java:115)
+    at se.kth.iv1350.repairbike.view.View.sampleExecution(View.java:55)
+    at se.kth.iv1350.repairbike.startup.Main.main(Main.java:25)

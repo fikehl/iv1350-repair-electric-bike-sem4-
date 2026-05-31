@@ -1,0 +1,15 @@
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/controller/ControllerTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/integration/CustomerNotFoundExceptionTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/integration/CustomerRegistryTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/integration/DatabaseFailureExceptionTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/integration/RegistryCreatorTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/integration/RepairOrderRegistryTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/model/AmountTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/model/DiagnosticReportTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/model/DiscountStrategyTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/model/RepairOrderObserverTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/model/RepairOrderTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/util/ErrorFileLoggerTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/view/RepairOrderLoggerTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/view/RepairOrderViewTest.java
+/Users/filip/Desktop/iv1350-repair-electric-bike-sem4-/sem4/src/test/java/se/kth/iv1350/repairbike/view/ViewTest.java
